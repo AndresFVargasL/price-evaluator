@@ -1,0 +1,8 @@
+services:
+  price-evaluator:
+    build:
+      context: ./price-evaluator
+      dockerfile: deployment/Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: price-evaluator-service
